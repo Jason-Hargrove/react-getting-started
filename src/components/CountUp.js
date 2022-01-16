@@ -11,7 +11,7 @@ export function Add () {
     return (
         <>
         <h1>{count}</h1>
-        <Hello />
+        {React.createElement(Hello, null)}
         </>
     )
 }
