@@ -6,9 +6,9 @@ function Button () {
     // a, b = useState()
     // a) state object (getter)
     // b) updater function (setter)
-    const [counter, setCounter] = useState(0)
+    const [counter, setCounter] = useState(5)
 
-    return <button onClick={() => console.log(Math.random())}>{counter}</button>
+    return <button onClick={() => setCounter(counter*2)}>{counter}</button>
 }
 
 export function Add () {
