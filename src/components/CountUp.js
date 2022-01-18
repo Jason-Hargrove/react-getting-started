@@ -2,20 +2,37 @@ import { useState } from 'react';
 
 let count = Math.random();
 
-function Button () {
-    // a, b = useState()
-    // a) state object (getter)
-    // b) updater function (setter)
-    const [counter, setCounter] = useState(5)
-
-    return <button onClick={() => setCounter(counter*2)}>{counter}</button>
+function Button ({ increment }) {
+    //const handleClick = () => setCounter(counter*2);
+    return (
+        <button onClick={increment}>
+            *2
+        </button>
+    );
 }
 
-export function Add () {
+// Display
+
+function Display({ message }) {
+    return (
+        <div>{message}</div>
+    );
+}
+
+function App() {
+    const [counter, setCounter] = useState(42);
+    const incrementCounter = () => setCounter(counter*2);
     return (
         <>
-        <h1>{count}</h1>
-        <Button />
+            <h1>{count}</h1>
+            <Button increment={incrementCounter} />
+            <Display message={counter}/>
         </>
-    )
+    );
+}
+
+export function Add() {
+    return (
+        <App />
+    );
 }
