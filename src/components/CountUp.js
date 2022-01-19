@@ -31,9 +31,41 @@ const circle = {
 const CircleArea = ({radius}, {precision = 2} = {}) =>
     (PI * radius * radius).toFixed(precision);
 
-console.log(CircleArea(circle, { precision: 5 }));
+//console.log(CircleArea(circle, { precision: 5 }));
 
 // Destructuring Arrays
+// const [first, second,, fourth] = [10, 20, 30, 40];
+//console.log(fourth);
+
+const [first, ...restOfItems] = [10, 20, 30, 40];
+// console.log(first);
+// console.log(restOfItems);
+
+const data = {
+    temp1: '001',
+    temp2: '002',
+    firstName: 'John',
+    lastName: 'Doe',
+};
+
+const {temp1, temp2, ...person} = data;
+
+// console.log(temp1);
+// console.log(typeof(temp1));
+// console.log(temp2);
+// console.log(person);
+// console.log(typeof(person));
+
+const newObj = {
+    ...person
+};
+
+const newArr = [...restOfItems];
+
+console.log(newObj);
+console.log(newArr);
+
+
 
 
 function App() {
