@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import { Add } from './components/CountUp';
 import { TemplateStrings } from './components/TemplateStrings';
+import { Classes } from './components/Classes';
 
 function App() {
   return (
@@ -11,6 +12,8 @@ function App() {
       <br />
       <br />
       <TemplateStrings />
+      <br />
+      <Classes />
     </>
   );
 }
