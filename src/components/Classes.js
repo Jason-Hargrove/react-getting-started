@@ -20,19 +20,19 @@ class Dog extends Canine {
 }
 
 const d1 = new Canine("Barky");
-console.log(d1);
-d1.greet();
+// console.log(d1);
+// d1.greet();
   
 const d2 = new Dog("Toki", 10);
-console.log(d2);
-d2.greet();
+// console.log(d2);
+// d2.greet();
 
 const d3 = new Dog("Max", 15);
-console.log(d3);
-d3.greet();
+// console.log(d3);
+// d3.greet();
 
-d3.greet = () => console.log("I\'am special!");
-d3.greet();
+// d3.greet = () => console.log("I\'am special!");
+// d3.greet();
   
 export function Classes() {
     return (

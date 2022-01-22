@@ -6,7 +6,7 @@ const html = `
     </div>
 `;
 
-console.log(html);
+// console.log(html);
 
 export function TemplateStrings() {
     return (

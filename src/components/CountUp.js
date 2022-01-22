@@ -62,8 +62,8 @@ const newObj = {
 
 const newArr = [...restOfItems];
 
-console.log(newObj);
-console.log(newArr);
+// console.log(newObj);
+// console.log(newArr);
 
 
 
