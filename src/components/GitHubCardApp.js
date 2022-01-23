@@ -1,16 +1,26 @@
+import React from 'react';
 import './GitHubCardApp.css';
 
-const GitHubCardApp = ({ title }) => {
-    return (
-        <>
-            <div className="header">
-                {title}
-            </div>
-        </>
-    );   
+// Class Component
+class GitHubCardApp extends React.Component {
+    // constructor
+    // this
+    render() {
+        return <div className="header">{this.props.title}</div>
+    }
 }
 
-export function CardApp() {
+// const GitHubCardApp = ({ title }) => {
+//     return (
+//         <>
+//             <div className="header">
+//                 {title}
+//             </div>
+//         </>
+//     );   
+// }
+
+export default function CardApp() {
     return (
         <>
             <GitHubCardApp title="The GitHub Card App" />
